@@ -71,6 +71,7 @@ class ShowUser extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         const Text("Address"),
+                        const SizedBox(height: 4,),
                         Text(
                           "${snap['address']}",
                           style: const TextStyle(
@@ -80,39 +81,7 @@ class ShowUser extends StatelessWidget {
                     ),
                     onTap: () {},
                     onLongPress: () {},
-                    dense: false,
-                    // child: Container(
-                    //   height: 80,
-                    //   child: Card(
-                    //     child: Column(
-                    //       mainAxisAlignment: MainAxisAlignment.center,
-                    //       children: [
-                    //         Row(
-                    //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    //           children: [
-                    //             CircleAvatar(child: Icon(Icons.person),),
-                    //             SizedBox(width: 20,),
-                    //             Column(
-                    //               crossAxisAlignment: CrossAxisAlignment.start,
-                    //               children: [
-                    //                 Text("${snap['name']}",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                    //                 Text("${snap['email']}"),
-                    //               ],
-                    //             ),
-                    //             Column(
-                    //               crossAxisAlignment: CrossAxisAlignment.start,
-                    //               children: [
-                    //                 Text("Age : ${snap['age']}",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                    //                 Text("Address : ${snap['address']}"),
-                    //               ],
-                    //             ),
-                    //           ],
-                    //         ),
-
-                    //       ],
-                    //     ),
-                    //   ),
-                    // ),
+                    dense: false
                   ),
                 );
               }).toList(),
